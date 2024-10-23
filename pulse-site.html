@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pulse - Conectando Marcas ao Ritmo Digital">
+    <title>Pulse - Conectando Marcas ao Ritmo Digital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a40; /* Fundo azul escuro */
+            color: white;
+        }
+        header {
+            background-color: #1a1a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .banner {
+            height: 400px;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 3.5em;
+            color: #ffdd57; /* Cor destaque para a frase principal */
+            text-shadow: 2px 2px 5px #000;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: #1a1a40;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            color: black; /* Títulos em preto */
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .service {
+            width: 30%;
+            background-color: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .service h3 {
+            color: black; /* Títulos de serviços em preto */
+        }
+        .service p {
+            font-size: 1.1em;
+            color: white; /* Texto dos serviços em branco */
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .contact-form input, .contact-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #1a1a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                width: 80%;
+            }
+            .contact-form {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Pulse - Conectando Marcas ao Ritmo Digital</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Banner Principal -->
+    <section class="banner" id="home">
+        <h1>Transformando Sua Presença Digital em Resultados</h1>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section class="section" id="sobre">
+        <h2>Quem Somos</h2>
+        <p>A Pulse é uma agência que conecta marcas ao ritmo digital, utilizando estratégias inovadoras e criativas para aumentar sua visibilidade online. Com uma equipe dedicada, garantimos que sua marca esteja sempre à frente.</p>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="section" id="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Conheça os serviços que oferecemos para levar sua marca ao próximo nível no digital.</p>
+        <div class="services">
+            <!-- Serviço 1 -->
+            <div class="service">
+                <h3>Gestão de Redes Sociais</h3>
+                <p>Desenvolvemos estratégias para aumentar o engajamento e a visibilidade da sua marca nas principais redes sociais.</p>
+                <img src="rede-social.jpg" alt="Gestão de Redes Sociais"> <!-- Imagem exemplo -->
+            </div>
+            <!-- Serviço 2 -->
+            <div class="service">
+                <h3>Criação de Conteúdo</h3>
+                <p>Produzimos conteúdos criativos para blogs, redes sociais e sites, ajudando sua marca a se destacar e conquistar seu público.</p>
+                <img src="criacao-conteudo.jpg" alt="Criação de Conteúdo"> <!-- Imagem exemplo -->
+            </div>
+            <!-- Serviço 3 -->
+            <div class="service">
+                <h3>Campanhas de Marketing Digital</h3>
+                <p>Planejamos e executamos campanhas de marketing que geram conversões, seja através de anúncios pagos ou estratégias orgânicas.</p>
+                <img src="campanhas-marketing.jpg" alt="Campanhas de Marketing"> <!-- Imagem exemplo -->
+            </div>
+            <!-- Serviço 4 -->
+            <div class="service">
+                <h3>SEO - Otimização para Mecanismos de Busca</h3>
+                <p>Aprimoramos seu site para que ele esteja sempre no topo dos resultados de pesquisa, gerando tráfego orgânico e resultados.</p>
+                <img src="seo-otimizacao.jpg" alt="SEO - Otimização para Mecanismos de Busca"> <!-- Imagem exemplo -->
+            </div>
+            <!-- Serviço 5 -->
+            <div class="service">
+                <h3>Design Gráfico</h3>
+                <p>Criamos identidades visuais e designs gráficos que capturam a essência da sua marca e atraem o olhar do seu público.</p>
+                <img src="design-grafico.jpg" alt="Design Gráfico"> <!-- Imagem exemplo -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section class="section" id="portfolio">
+        <h2>Nosso Portfólio</h2>
+        <p>Veja como transformamos a presença digital de nossos clientes e os ajudamos a alcançar seus objetivos.</p>
+        <!-- Galeria de imagens e descrições dos projetos -->
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="section" id="contato">
+        <h2>Entre em Contato</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Pulse - Todos os Direitos Reservados</p>
+        <p>Nos siga nas redes sociais: Instagram | Facebook | LinkedIn</p>
+    </footer>
+
+</body>
+</html>
